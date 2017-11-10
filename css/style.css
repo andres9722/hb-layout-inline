@@ -10,7 +10,8 @@ body {
 .main-header {
     width: 100%;
     height: 80px;
-    background: #007BDF;
+    background: #D8D8D8;
+    border: 1px solid #979797;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,50 +27,40 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
     opacity: .8;
-    font-size: 1.5em;
+    font-size: 2em;
+    text-shadow: 1px 0 0 #979797;
 }
 
 .main-section {
     margin-top: 80px;
 }
 
-.aside-l, .aside-r {
+.aside:nth-last-of-type(1), .aside:nth-last-of-type(2) {
     display: block;
     height: 300px;
-    width: 100%;
-    background: #FF3C32;
-}
-
-.aside-r {
-    background-color: #FBA905;
+    background: #D8D8D8;
+    border: 1px solid #979797;
 }
 
 .article {
     display: block;
-    width: 100%;    
     height: 120px;
-    background-color: #282D31;
-}
-
-.article:nth-child(2) {
-    background-color: #F63E02;
-}
-
-.article:nth-child(3) {
-    background-color: #282D31;
+    background-color: #D8D8D8;
+    border: 1px solid #979797;
 }
 
 .main-footer {
-    width: 100%;
     height: 200px;
-    background-color: #1B4079;
+    background-color: #D8D8D8;
+    border: 1px solid #979797;
     position: relative;
 }
 
 .content {
     width: 150px;
     height: 150px;
-    background-color: #FAFFFD;
+    background-color: #D8D8D8;
+    border: 1px solid #979797;
     line-height: 120px;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -78,9 +69,6 @@ body {
 }
 
 @media screen and (min-width: 1024px) {
-    body {
-        margin-top: 20px;
-    }
 
     .main-header {
         width: 1024px;
@@ -98,16 +86,16 @@ body {
         font-size: 0;
     }
 
-    .aside-l, .aside-r {
+    .aside:nth-child(1), .aside:nth-child(2) {
         width: calc(50% - 10px);
         display: inline-block;
     }
 
-    .aside-l {
+    .aside:nth-child(1) {
         margin-right: 10px;
     }
 
-    .aside-r {
+    .aside:nth-child(2) {
         margin-left: 10px;
     }
 
